@@ -7,6 +7,7 @@
   "config.remakefactory.gtceu.multi_block.enable": "处理多方块机器配方",
   "config.remakefactory.gtceu.scaling_multiplier": "缩放乘数",
   "config.remakefactory.gtceu.filter.enable": "启用过滤",
+  "config.remakefactory.gtceu.filter_except_circuit.enable": "启用编程电路保留",
 
   "commands.remakefactory.config.usage": "使用: /remakefactory config <category> <key> [value]",
   "commands.remakefactory.config.get.success": "配置项 '%s' 的当前值为 '%s'",

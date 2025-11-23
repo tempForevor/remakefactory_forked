@@ -28,6 +28,7 @@ public final class ConfigCommand {
                 .then(buildCommandForBoolean("reorder", Config.COMMON.recipeHijacker.gtceu.reorder))
                 .then(buildCommandForBoolean("multiBlock", Config.COMMON.recipeHijacker.gtceu.multiBlock))
                 .then(buildCommandForBoolean("filter", Config.COMMON.recipeHijacker.gtceu.filter))
+                .then(buildCommandForBoolean("filter_except_circuit", Config.COMMON.recipeHijacker.gtceu.filter_except_circuit))
                 .then(buildCommandForInt("scalingMultiplier", Config.COMMON.recipeHijacker.gtceu.scalingMultiplier, 1, 100000));
 
         hijackerCmd.then(gtceuCmd);

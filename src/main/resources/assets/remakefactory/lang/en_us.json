@@ -7,6 +7,7 @@
   "config.remakefactory.gtceu.multi_block.enable": "Handle Multi-block Recipes",
   "config.remakefactory.gtceu.scaling_multiplier": "Scaling Multiplier",
   "config.remakefactory.gtceu.filter.enable": "Enable Filtering",
+  "config.remakefactory.gtceu.filter_except_circuit.enable": "Enable Saving Circuit Ingredient",
 
   "commands.remakefactory.config.usage": "Usage: /remakefactory config <category> <key> [value]",
   "commands.remakefactory.config.get.success": "Config '%s' is currently set to '%s'",

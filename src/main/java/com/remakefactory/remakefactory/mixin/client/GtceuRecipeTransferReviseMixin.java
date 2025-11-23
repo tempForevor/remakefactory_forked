@@ -90,7 +90,9 @@ public abstract class GtceuRecipeTransferReviseMixin {
         List<Content> itemInputs = newRecipe.inputs.get(ItemRecipeCapability.CAP);
 
         if (itemInputs != null && !itemInputs.isEmpty()) {
-            if (itemInputs.removeIf(content -> content.chance == 0)) {
+            if (itemInputs.removeIf(content -> content.chance == 0
+                    &&!(Config.COMMON.recipeHijacker.gtceu.filter_except_circuit.get()
+                        &&content.content instanceof IntCircuitIngredient) )) {
                 if (itemInputs.isEmpty()) {
                     newRecipe.inputs.remove(ItemRecipeCapability.CAP);
                 }

@@ -69,6 +69,7 @@ public final class Config {
         public final ForgeConfigSpec.BooleanValue multiBlock;
         public final ForgeConfigSpec.IntValue scalingMultiplier;
         public final ForgeConfigSpec.BooleanValue filter;
+        public final ForgeConfigSpec.BooleanValue filter_except_circuit;
 
         public Gtceu(ForgeConfigSpec.Builder builder) {
             builder.comment("Settings specifically for GregTech CEu recipes.")
@@ -99,6 +100,12 @@ public final class Config {
                     .comment("If true, enables recipe filtering logic. The specifics of what is filtered are handled in the mod's code.")
                     .translation("config.remakefactory.gtceu.filter.enable")
                     .define("enable", true);
+
+            this.filter_except_circuit = builder
+                    .comment("If true, avoids removing circut ingredient when filtering.")
+                    .translation("config.remakefactory.gtceu.filter_except_circuit.enable")
+                    .define("enable",true);
+
             builder.pop();
         }
     }
